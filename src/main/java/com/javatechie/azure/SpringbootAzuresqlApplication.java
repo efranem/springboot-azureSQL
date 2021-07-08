@@ -27,7 +27,11 @@ public class SpringbootAzuresqlApplication {
         return repository.findAll();
     }
 
-
+    @GetMapping("/info")
+    public String getInfo() {
+        return "Estoy vivo !!";
+    }
+    
     public static void main(String[] args) {
         SpringApplication.run(SpringbootAzuresqlApplication.class, args);
     }
